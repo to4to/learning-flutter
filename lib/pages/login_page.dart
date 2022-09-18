@@ -1,12 +1,19 @@
 import "package:flutter/material.dart";
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(child: Text("LoginPage")),
+    return Material(
+      child: Center(child: Text("LoginPage",style: TextStyle(
+        fontSize: 40,
+        color: Colors.blueAccent,
+        fontWeight: FontWeight.bold
+        
+        ),
+        )
+        ),
     );
   }
 }
