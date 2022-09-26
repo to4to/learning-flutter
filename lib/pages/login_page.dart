@@ -18,7 +18,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             children: [
               Image.asset(
-                "assets/image/login.png",
+                "assets/image/hey.png",
                 fit: BoxFit.cover,
               ),
               const SizedBox(
@@ -57,13 +57,25 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(
                       height: 20.0,
                     ),
-                    ElevatedButton(
-                        onPressed: () {
+
+                             Container(
+
+width: 150,
+height: 50,
+color: Colors.deepPurple,
+                                  child:const Text("Login"),                             
+                             ),
+
+
+
+                    
+                   // ElevatedButton(
+                     //   onPressed: () {
                           // ignore: avoid_print
-                          Navigator.pushNamed(context, MyRoutes.homeRoute);
-                        },
-                        style: TextButton.styleFrom(),
-                        child: const Text("Login")),
+                       //   Navigator.pushNamed(context, MyRoutes.homeRoute);
+                        
+                       // style: TextButton.styleFrom(),
+                      //  child: const Text("Login")),
                   ],
                 ),
               )
