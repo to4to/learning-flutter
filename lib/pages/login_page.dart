@@ -10,6 +10,8 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   String name = "";
+
+  bool changedButton = false;
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -24,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 20.0,
               ),
-               Text(
+              Text(
                 "Welcome $name",
                 style: const TextStyle(
                   fontSize: 28,
@@ -44,9 +46,7 @@ class _LoginPageState extends State<LoginPage> {
                           hintText: "Enter User Name", labelText: "User Name"),
                       onChanged: (value) {
                         name = value;
-                        setState(() {
-                          
-                        });
+                        setState(() {});
                       },
                     ),
                     TextFormField(
@@ -58,24 +58,35 @@ class _LoginPageState extends State<LoginPage> {
                       height: 20.0,
                     ),
 
-                             Container(
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, MyRoutes.homeRoute);
+                      },
+                      child: AnimatedContainer(
+                        duration: const Duration(seconds: 1),
+                        width: 150,
+                        height: 50,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            color: Colors.deepPurple),
+                        child: const Text(
+                          "Login",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
 
-width: 150,
-height: 50,
-color: Colors.deepPurple,
-                                  child:const Text("Login"),                             
-                             ),
+                    // ElevatedButton(
+                    //   onPressed: () {
+                    // ignore: avoid_print
+                    //   Navigator.pushNamed(context, MyRoutes.homeRoute);
 
-
-
-                    
-                   // ElevatedButton(
-                     //   onPressed: () {
-                          // ignore: avoid_print
-                       //   Navigator.pushNamed(context, MyRoutes.homeRoute);
-                        
-                       // style: TextButton.styleFrom(),
-                      //  child: const Text("Login")),
+                    // style: TextButton.styleFrom(),
+                    //  child: const Text("Login")),
                   ],
                 ),
               )
