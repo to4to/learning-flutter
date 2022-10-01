@@ -59,24 +59,37 @@ class _LoginPageState extends State<LoginPage> {
                     ),
 
                     InkWell(
-                      onTap: () {
+                      onTap: () async
+                       {
+                        setState(() {
+                          changedButton = true;
+                        });
+                        await Future.delayed(const Duration(seconds: 2));
+                        // ignore: use_build_context_synchronously
                         Navigator.pushNamed(context, MyRoutes.homeRoute);
                       },
                       child: AnimatedContainer(
                         duration: const Duration(seconds: 1),
-                        width: 150,
+                        width: changedButton ? 50 : 150,
                         height: 50,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8.0),
-                            color: Colors.deepPurple),
-                        child: const Text(
-                          "Login",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold),
+                          color: Colors.deepPurple,
+                          borderRadius:
+                              BorderRadius.circular(changedButton ? 50 : 8),
+
+                          //shape: BoxShape( changedButton?BoxShape.circle:BoxShape.rectangle),
+                          //  borderRadius: BorderRadius.circular(changedButton? 20:8),
                         ),
+                        child: changedButton
+                            ? const Icon(Icons.done)
+                            : const Text(
+                                "Login",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold),
+                              ),
                       ),
                     ),
 
