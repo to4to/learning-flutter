@@ -24,12 +24,13 @@ class MyApp extends StatelessWidget {
        ),
        darkTheme: ThemeData(brightness: Brightness.dark
        ),
-         initialRoute: "/",
+         initialRoute: MyRoutes.homeRoute,
        
-       routes: {
+       routes:
+        {
         
-"/":(context) => LoginPage(),
-        MyRoutes.loginRoute:(context) =>LoginPage(),
+            "/":(context) => const LoginPage(),
+        MyRoutes.loginRoute:(context) =>const LoginPage(),
         MyRoutes.homeRoute:(context) => const HomePage(),
        },
     );
