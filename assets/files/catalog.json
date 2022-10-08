@@ -1,7 +1,7 @@
 {
     "products":[
         {
-             "id":"test1",
+             "id":1,
              "name":"Himanshu1",
              "desc":"Just Test 1",
              "price": 555,
@@ -11,7 +11,7 @@
 
 
     {
-        "id":"test2",
+        "id":2,
         "name":"Himanshu2",
         "desc":"Just Test 2",
         "price": 556,
@@ -20,7 +20,7 @@
 
     },
 {
-    "id":"test3",
+    "id":3,
     "name":"Himanshu3",
     "desc":"Just Test 3",
     "price": 557,
@@ -29,7 +29,7 @@
 },
 
 {
-    "id":"test4",
+    "id":4,
     "name":"Himanshu4",
     "desc":"Just Test 4",
     "price": 558,
@@ -37,7 +37,7 @@
     "image":"https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=600"
 },
 {
-    "id":"test5",
+    "id":5,
     "name":"Himanshu5",
     "desc":"Just Test 5",
     "price": 559,
@@ -45,7 +45,7 @@
     "image":"https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&w=600"
 },
 {
-    "id":"test6",
+    "id":6,
     "name":"Himanshu6",
     "desc":"Just Test 6",
     "price": 560,
@@ -53,7 +53,7 @@
     "image":"https://images.pexels.com/photos/719399/pexels-photo-719399.jpeg?auto=compress&cs=tinysrgb&w=600"
 },
 {
-    "id":"test7",
+    "id":7,
     "name":"Himanshu7",
     "desc":"Just Test 7",
     "price": 561,
@@ -61,7 +61,7 @@
     "image":"https://images.pexels.com/photos/2417848/pexels-photo-2417848.jpeg?auto=compress&cs=tinysrgb&w=600"
 },
 {
-    "id":"test8",
+    "id":8,
     "name":"Himanshu8",
     "desc":"Just Test 8",
     "price": 561,
@@ -69,7 +69,7 @@
     "image":"https://images.pexels.com/photos/1275229/pexels-photo-1275229.jpeg?auto=compress&cs=tinysrgb&w=600"
 },
 {
-    "id":"test9",
+    "id":9,
     "name":"Himanshu9",
     "desc":"Just Test 9",
     "price": 562,
